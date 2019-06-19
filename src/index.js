@@ -1,1 +1,33 @@
-/*Acá va tu código*/
+//const btnSave = document.getElementById("codeText");
+//btnSave.addEventListener("click", ()=>{
+//  alert("Hello");
+//});
+const btnCode = document.getElementById('codificar');
+btnCode.addEventListener("click", () => {
+  document.getElementById('pagina1').style.display="none";
+  document.getElementById('pagina2').style.display="block";
+});
+
+
+document.getElementById('codeTextBtn').addEventListener("click",()=>{
+  let texto = document.getElementById('textAreaCode').value;
+  let offset=parseInt(document.getElementById('numberOffset1').value);
+  let textoFinalCode=window.cipher.encode(texto,offset);
+  document.getElementById('textAreaDecode').value=textoFinalCode;
+  //document.getElementById('textArea2').value = textoFinalCode;
+})
+
+
+
+document.getElementById('decodeTextBtn').addEventListener("click",()=>{
+  let texto2 = document.getElementById('textAreaDecode').value;
+  let offset2=parseInt(document.getElementById('numberOffset2').value);
+  let textoFinalDecode=window.cipher.decode(texto2,offset2);
+  document.getElementById('textArea1').value=textoFinalDecode;
+})
+
+
+
+//btnSave.addEventListener("click",()=>{
+  //let texto= document.getElementById('name').value;
+//})

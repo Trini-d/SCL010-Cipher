@@ -4,12 +4,83 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+
+<body>
+
+<div id="pagina1">
+<div>
+<h1 class="bienvenida" id="bienvenida"> ¡Bienvenidx! </h1>
+</div>
+    <div id="enunciado">
+      <p align=center> * Este es un espacio seguro donde podrás codificar y decodificar toda la información necesaria <br/>
+    para llevar a cabo un aborto seguro, en un contexto vulnerable donde el aborto es ilegal y clandestino * </p>
+
     </div>
+
+<div id="cajaParaCode"><br> ♥ Presiona el botón inferior si quieres codificar un texto</br>
+  <br> ♥ El texto debe estar <strong>todo </strong>en <strong> mayúscula</strong>, por el contrario no funcionará</br>
+<br>♥ Ingresa el número de desplazamiento que quieres que tenga tu texto</br>
+
+<button id="codificar">Codificar</button>
+
+</div>
+
+<div id="cajaParaDecode">
+
+   <button id="decodificar">Decodificar</button>
+
+</div>
+
+</div>
+
+
+<div id="pagina2">
+
+    <div class="offset">
+    <p> Desplazamiento <input id="numberOffset1" type="number" name="offset"> </p>
+    </div>
+
+    <div id="textoParaCodificar">
+       <textarea type="text/javascript" id="textAreaCode" rows="13" cols="60" placeholder="Ingresa tu texto">
+    </textarea>
+    </div>
+
+    <div>
+    <button id="codeTextBtn">Codificar</button>
+    </div>
+
+    <br>
+</div>
+
+<div id="pagina3">
+
+    <div class="offset">
+    <p> Desplazamiento <input id="numberOffset2" type="number" name="offset2"> </p>
+    </div>
+
+
+
+    <div id="textoParaDecodificar">
+    <textarea type="text/javascript" id="textAreaDecode" name="texto" placeholder= "Introduzca su texto a Codificar" rows="13" cols="60">
+    </textarea>
+   </div>
+
+   <div>
+   <button id="decodeTextBtn">Decodificar</button>
+
+   </div>
+
+
+</div>
+
+
+
+
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+
   </body>
 </html>

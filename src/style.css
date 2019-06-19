@@ -1,1 +1,96 @@
-/* Acá va tu código */
+
+
+#textAreaCode{
+
+  font-family:monospace;
+}
+
+#textArea{
+
+}
+
+#textoParaDecodificar{
+  text-align: center;
+}
+#bienvenida{
+  text-align: center;
+
+}
+#enunciado{
+  text-align: justify;
+}
+body {
+	background-size:cover;
+  background-color: pink;
+  font-family: 'Roboto', sans-serif;
+  font-size:
+  text-align: center;
+}
+
+.bienvenida{
+
+  font-size: 35px;
+  font-weight: 500;
+  background-color:#4E58F4;
+  margin-left: -100px;
+  margin-right: -100px;
+  padding: 25px;
+
+  text-align: center;
+}
+
+#pagina2{
+  display: none;
+
+}
+#pagina3{
+  display:none;
+}
+
+#codificar{
+  border-radius: 6px;
+  margin-top: 15%;
+  margin-right: 30%;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 15px;
+  Position: absolute;
+  left:30%;
+  top:65%;
+}
+#decodificar{
+  border-radius: 6px;
+  margin-top: 15%;
+  margin-right: 30%;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 15px;
+  Position:absolute;
+  top:65%;
+  right:0%;
+
+}
+#cajaParaCode{
+  background-color: rgba(255, 255, 255, 0.3);
+  position:absolute;
+  right:55%;
+  top:20%;
+  margin-block-start: 8%;
+  margin-left: 40px;
+  width: 250px;
+  height: 250px;
+ border-radius: 6px;
+ text-align: left;
+ font-size: 14px;
+}
+#cajaParaDecode{
+  background-color: rgba(255, 255, 255, 0.3);
+  position:absolute;
+  right:28%;
+  margin-block-start: 8%;
+  margin-left: 40px;
+  width: 250px;
+  height: 250px;
+ border-radius: 6px;
+ top:20%;
+}
