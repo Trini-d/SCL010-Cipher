@@ -8,65 +8,74 @@
   </head>
 
 <body>
+<div class="degradado">
+
+<div class="imagenlogo">
+  <a href="">
+   <img src="/Desktop/blog-logo.png" />
+</a>
+
+</div>
 
 <div id="pagina1">
 <div>
 <h1 class="bienvenida" id="bienvenida"> ¡Bienvenidx! </h1>
 </div>
-    <div id="enunciado">
-      <p align=center> * Este es un espacio seguro donde podrás codificar y decodificar toda la información necesaria <br/>
-    para llevar a cabo un aborto seguro, en un contexto vulnerable donde el aborto es ilegal y clandestino * </p>
 
-    </div>
 
-<div id="cajaParaCode"><br> ♥ Presiona el botón inferior si quieres codificar un texto</br>
-  <br> ♥ El texto debe estar <strong>todo </strong>en <strong> mayúscula</strong>, por el contrario no funcionará</br>
-<br>♥ Ingresa el número de desplazamiento que quieres que tenga tu texto</br>
-
-<button id="codificar">Codificar</button>
-
+<div id="enunciado">
+<p align=center> * Este es un espacio pro aborto (en un contexto donde el aborto es ilegal y clandestino) donde podrás comunicarte
+  de forma totalmente anónima y encriptada en relación a este tema, para así lograr un aborto seguro
+  (preguntas, experiencias, relatos, consejos, espacios seguros, redes de comunicación, direcciones de encuentro, etc.).<br/>
+  Esto quiere decir, que la información compartida no podrá ser leída sin pasar por el decodificador de esta página,
+    por lo que es de SUMA IMPORTANCIA, tener cautela con quien compartirla.  * </p>
 </div>
 
+<div id="cajaParaCode"><br> ♥ Presiona el botón inferior si quieres codificar un texto</br>
+<br> ♥ El texto debe estar <strong>todo </strong>en <strong> mayúscula</strong>, por el contrario no funcionará</br>
+<br>♥ Ingresa el número de seguridad que quieres que tenga tu texto</br>
+<button id="codificar">Codificar</button>
+</div>
 <div id="cajaParaDecode">
-
-   <button id="decodificar">Decodificar</button>
-
+<button id="decodificar">Decodificar</button>
 </div>
 
 </div>
 
 
 <div id="pagina2">
+<div class="offset">
+<p> Número de seguridad <input id="numberOffset1" type="number" name="offset"> </p>
+</div>
 
-    <div class="offset">
-    <p> Desplazamiento <input id="numberOffset1" type="number" name="offset"> </p>
-    </div>
+<div id="textoParaCodificar">
+<textarea type="text/javascript" id="textAreaCode" rows="13" cols="60" >
+</textarea>
+</div>
+<div id="respuestaTextoCodificado">
+<textarea type="text/javascript" id="textAreaRespuesta" rows="13" cols="60">
+</textarea>
+</div>
 
-    <div id="textoParaCodificar">
-       <textarea type="text/javascript" id="textAreaCode" rows="13" cols="60" placeholder="Ingresa tu texto">
-    </textarea>
-    </div>
-
-    <div>
-    <button id="codeTextBtn">Codificar</button>
-    </div>
-
-    <br>
+<div>
+<button id="codeTextBtn">Codificar</button>
+</div>
+<br>
 </div>
 
 <div id="pagina3">
+<div class="offset">
+<p> Número de seguridad <input id="numberOffset2" type="number" name="offset2"> </p>
+</div>
 
-    <div class="offset">
-    <p> Desplazamiento <input id="numberOffset2" type="number" name="offset2"> </p>
-    </div>
-
-
-
-    <div id="textoParaDecodificar">
-    <textarea type="text/javascript" id="textAreaDecode" name="texto" placeholder= "Introduzca su texto a Codificar" rows="13" cols="60">
-    </textarea>
-   </div>
-
+<div id="textoParaDecodificar">
+<textarea type="text/javascript" id="textAreaDecode" rows="13" cols="60">
+</textarea>
+</div>
+<div id="respuestaTextoDecodificado">
+<textarea type="text/javascript" id="textAreaRespuesta2" rows="13" cols="60">
+</textarea>
+</div>
    <div>
    <button id="decodeTextBtn">Decodificar</button>
 
@@ -75,12 +84,8 @@
 
 </div>
 
-
-
-
-
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-
+</div>
   </body>
 </html>

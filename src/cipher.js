@@ -2,6 +2,7 @@
 window.cipher = {
   encode: (texto, offset) => {
     let textoFinalCode= '';
+  
     for(let i = 0; i < texto.length; i++){
     let  asci_inicial = texto.charCodeAt(i);//texto ingresado por usuario, se convierte en un número ASCII
     if(asci_inicial>=65 && asci_inicial<=90){
@@ -18,9 +19,9 @@ window.cipher = {
     for(let i = 0; i < texto2.length; i++){
     let asci_inicial = texto2.charCodeAt(i);//texto ingresado por usuario, se convierte en un número ASCII
     if(asci_inicial>=65 && asci_inicial<=90){
-      asci_final = ((asci_inicial + 65 - offset2 - 26)%26 + 65);//número ASCii es desplazado
-      letrafinal = String.fromCharCode(asci_final);//el número desplazado se convierte en nueva letra.
-      textoFinalDecode += aº  ; //concatenación de letras
+    let asci_final = ((asci_inicial + 65 - offset2 - 26)%26 + 65);//número ASCii es desplazado
+    let letrafinal = String.fromCharCode(asci_final);//el número desplazado se convierte en nueva letra.
+      textoFinalDecode += letrafinal; //concatenación de letras
     }
   }
   return textoFinalDecode;

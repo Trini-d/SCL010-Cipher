@@ -1,37 +1,38 @@
-
-
-#textAreaCode{
-
-  font-family:monospace;
-}
-
-#textArea{
-
-}
-
-#textoParaDecodificar{
-  text-align: center;
-}
 #bienvenida{
   text-align: center;
 
 }
 #enunciado{
-  text-align: justify;
+  text-align: center;
 }
 body {
 	background-size:cover;
-  background-color: pink;
+
   font-family: 'Roboto', sans-serif;
   font-size:
   text-align: center;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#febbbb+0,fe9090+50,fe9090+50,ff5c5c+100 */
+background: #febbbb; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+background: -moz-linear-gradient(top,  #febbbb 0%, #fe9090 50%, #fe9090 50%, #ff5c5c 100%); /* FF3.6-15 */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#febbbb), color-stop(50%,#fe9090), color-stop(50%,#fe9090), color-stop(100%,#ff5c5c)); /* Chrome4-9,Safari4-5 */
+background: -webkit-linear-gradient(top,  #febbbb 0%,#fe9090 50%,#fe9090 50%,#ff5c5c 100%); /* Chrome10-25,Safari5.1-6 */
+background: -o-linear-gradient(top,  #febbbb 0%,#fe9090 50%,#fe9090 50%,#ff5c5c 100%); /* Opera 11.10-11.50 */
+background: -ms-linear-gradient(top,  #febbbb 0%,#fe9090 50%,#fe9090 50%,#ff5c5c 100%); /* IE10 preview */
+background: linear-gradient(to bottom,  #febbbb 0%,#fe9090 50%,#fe9090 50%,#ff5c5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=0 ); /* IE6-8 */
+
+}
+.degradado{
+  height:35em;
 }
 
 .bienvenida{
 
   font-size: 35px;
   font-weight: 500;
-  background-color:#4E58F4;
+  background-color:none;
   margin-left: -100px;
   margin-right: -100px;
   padding: 25px;
@@ -41,10 +42,12 @@ body {
 
 #pagina2{
   display: none;
+  text-align: center;
 
 }
 #pagina3{
   display:none;
+  text-align: center;
 }
 
 #codificar{
@@ -74,7 +77,7 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   position:absolute;
   right:55%;
-  top:20%;
+  top:25%;
   margin-block-start: 8%;
   margin-left: 40px;
   width: 250px;
@@ -92,5 +95,5 @@ body {
   width: 250px;
   height: 250px;
  border-radius: 6px;
- top:20%;
+ top:25%;
 }
