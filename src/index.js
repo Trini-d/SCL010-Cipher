@@ -3,6 +3,7 @@ btnCode.addEventListener("click", () => {
   document.getElementById('paginaInicio').style.display="none";
   document.getElementById('paginaParaCode').style.display="block";
   document.getElementById("paginaParaDecode").style.display="none";
+  document.getElementById("enlaces").style.display="none";
 });
 
 const btnDecode = document.getElementById('decodificar');
@@ -10,6 +11,7 @@ btnDecode.addEventListener("click", () => {
   document.getElementById('paginaInicio').style.display="none";
   document.getElementById('paginaParaCode').style.display="none";
   document.getElementById("paginaParaDecode").style.display="block";
+  document.getElementById("enlaces").style.display="none";
 });
 
 const inputOffset = document.getElementById("numberOffset1");
@@ -66,7 +68,7 @@ btnVolver1.addEventListener("click", ()=>{
   document.getElementById("numberOffset1").value="";
   document.getElementById("paginaParaCode").style.display="none";
   document.getElementById("paginaInicio").style.display="block";
-
+  document.getElementById("enlaces").style.display="block";
 });
 
 const btnVolver2= document.getElementById("btnVolver2");
@@ -76,6 +78,7 @@ btnVolver2.addEventListener("click", ()=>{
   document.getElementById("numberOffset2").value="";
   document.getElementById("paginaParaDecode").style.display="none";
   document.getElementById("paginaInicio").style.display="block";
+  document.getElementById("enlaces").style.display="block";
 });
 const btnEnlace= document.getElementById("enlace");
 btnEnlace.addEventListener("click",() => {
