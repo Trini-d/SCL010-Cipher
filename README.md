@@ -3,7 +3,7 @@
 En este proyecto de cifrado se puede codificar y decodificar un mensaje utilizando el Cifrado César. Está enfocado a mujeres que quieran abortar, en un contexto donde el tema es un tema tabú e ilegal, para que así puedan compartir información encriptada y se sientan seguras al hacerlo.
 
 
-# Definición del producto
+## Definición del producto
 
 Decidí trabajar en torno al ejercicio del aborto porque considero que es un tema muy contingente, compuesto por varias aristas que es necesario mencionar.
 
@@ -19,13 +19,13 @@ Para llegar al producto final, primero hice un prototipado simple, dibujado a ma
 
 En el proceso fui testeando la plataforma con varias personas para que me dieran feedback, para así llegar a un producto donde se entienda para qué y quienes está hecho (a través del home de bienvenida), para saber si la interacción era amigable para el usuario y si las instrucciones estaban realmente claras.
 
-# Contenido
+## Contenido
 
 - Home con una bienvenida a las usuarias con instrucciones para codificar y decodificar con su respectivo botón.
 - Página para codificar, donde hay un input para ingresar el número de desplamiento, un área para ingresar el texto, otra donde estará el contenido codificado y 4 botones: para ejecutar la codificación, para copiar el texto, para limpiar los contenidos y para volver al home.
 - Página para decodificar, un área para ingresar el texto, otra donde estará el contenido decodificado y 4 botones: para ejecutar la decodificación, para copiar el texto si es que el usuario lo requiere, para limpiar los contenidos y para volver al home.
 
-# Herramienas utilizadas
+## Herramienas utilizadas
 
 - Atom
 - Node
