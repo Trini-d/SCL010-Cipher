@@ -11,76 +11,91 @@
 <div class="degradado">
 
 <div class="imagenlogo">
-  <a href="">
-   <img src="/Desktop/blog-logo.png" />
-</a>
+  <img src="Imagenes/blog-logo.png" alt="imagenlogo">
 
 </div>
-
-<div id="pagina1">
-<div>
-<h1 class="bienvenida" id="bienvenida"> ¡Bienvenidx! </h1>
-</div>
-
+<div id="paginaInicio">
 
 <div id="enunciado">
-<p align=center> * Este es un espacio pro aborto (en un contexto donde el aborto es ilegal y clandestino) donde podrás comunicarte
-  de forma totalmente anónima y encriptada en relación a este tema, para así lograr un aborto seguro
-  (preguntas, experiencias, relatos, consejos, espacios seguros, redes de comunicación, direcciones de encuentro, etc.).<br/>
-  Esto quiere decir, que la información compartida no podrá ser leída sin pasar por el decodificador de esta página,
-    por lo que es de SUMA IMPORTANCIA, tener cautela con quien compartirla.  * </p>
+<p> Bienvenida! Sabemos que estás pasando por un momento complejo y queremos ayudarte.
+  Chile es uno de los pocos países en el mundo donde el tema del aborto es un tabú, y su ejercicio sigue siendo ilegal.
+  Consideramos necesario crear redes de apoyo confiables para acompañarnos y enfrentar esta situación.
+   Este sitio web es un contexto seguro para compartir y/o recibir informaciones estrictamente confidenciales.
+   Aquí podrás encriptar mensajes (transformarlos en un código que no será legible más que para ti y para quienes tú decidas),
+   y también desencriptar informaciones tales como direcciones de encuentro, preguntas, consejos y otros.
+   </p>
 </div>
 
-<div id="cajaParaCode"><br> ♥ Presiona el botón inferior si quieres codificar un texto</br>
-<br> ♥ El texto debe estar <strong>todo </strong>en <strong> mayúscula</strong>, por el contrario no funcionará</br>
-<br>♥ Ingresa el número de seguridad que quieres que tenga tu texto</br>
-<button id="codificar">Codificar</button>
+<div id="cajaParaCode">
+  <div class="textoCaja">
+<p> ♦ Inventa una clave numérica. Puede ser cualquiera, lo único importante es que no la olvides. </p>
+<p> ♦ Ingresa tu texto (no existen límites de extensión).</p>
+<p> ♦ Haz click en el botón ‘Encriptar’. Luego tendrás tu mensaje encriptado, el que podrás copiar para compartirlo donde necesites.</p>
+ </div>
+<button id="codificar">Encriptar</button>
 </div>
+
 <div id="cajaParaDecode">
-<button id="decodificar">Decodificar</button>
+  <div class="textoCaja">
+<p> ♦ Ingresa la clave que te dieron.</p>
+<br/><p> ♦ Pega el texto a desencriptar.</p>
+<br/><p> ♦ Haz click en el botón ‘Desencriptar’. Tendrás el mensaje desencriptado.</p>
+  </div>
+<button id="decodificar">Desencriptar</button>
 </div>
 
 </div>
 
-
-<div id="pagina2">
-<div class="offset">
-<p> Número de seguridad <input id="numberOffset1" type="number" name="offset"> </p>
+<div class="enlaces">
+  <p>Enlaces que pueden servirte de gran ayuda:</p>
+  ♦ <input id ="enlace" value="Con Amigas y en la Casa" class="enlace" role="link" type="button">
+<br/>  ♦ <input id ="enlace2" value="El Mostrador: Línea de aborto libre" class="enlace" role="link" type="button">
+<br/>  ♦ <input id ="enlace3" value="Línea de aborto libre" class="enlace" role="link" type="button">
 </div>
 
-<div id="textoParaCodificar">
-<textarea type="text/javascript" id="textAreaCode" rows="13" cols="60" >
+<!--Todo lo que esté acompañado por un 1, se refiere a elementos de Encode -->
+<div id="paginaParaCode">
+ <div class="offset">
+<p> Clave <input class="colorOffset" id="numberOffset1" type="number" name="offset"> </p>
+ </div>
+
+ <div id="textoParaCodificar">
+<textarea placeholder="Ingresa tu texto" type="text/javascript" id="textAreaCode" rows="13" cols="60">
 </textarea>
-</div>
-<div id="respuestaTextoCodificado">
-<textarea type="text/javascript" id="textAreaRespuesta" rows="13" cols="60">
+ </div>
+ <div>
+<button id="codeTextBtn">Encriptar</button>
+ </div>
+ <div id="respuestaTextoCodificado">
+<br><textarea type="text/javascript" id="textAreaRespuesta1" rows="13" cols="60">
 </textarea>
+ </div>
+<button id="btnlimpiar1">Limpiar</button> <button id="btnCopiar1">Copiar</button> <button id="btnVolver1">Volver</button>
+
+ <br>
 </div>
 
-<div>
-<button id="codeTextBtn">Codificar</button>
-</div>
-<br>
-</div>
+<!--Todo lo que esté acompañado por un 2, se refiere a elementos de Decode -->
+<div id="paginaParaDecode">
+ <div class="offset">
+<p> Clave <input class="colorOffset" id="numberOffset2" type="number" name="offset2"> </p>
+ </div>
 
-<div id="pagina3">
-<div class="offset">
-<p> Número de seguridad <input id="numberOffset2" type="number" name="offset2"> </p>
-</div>
-
-<div id="textoParaDecodificar">
-<textarea type="text/javascript" id="textAreaDecode" rows="13" cols="60">
+ <div id="textoParaDecodificar">
+<textarea placeholder="Ingresa tu texto" type="text/javascript" id="textAreaDecode" rows="13" cols="60">
 </textarea>
-</div>
-<div id="respuestaTextoDecodificado">
-<textarea type="text/javascript" id="textAreaRespuesta2" rows="13" cols="60">
+ </div>
+ <div>
+<button id="decodeTextBtn">Desencriptar</button>
+
+ </div>
+
+ <div id="respuestaTextoDecodificado">
+<br><textarea type="text/javascript" id="textAreaRespuesta2" rows="13" cols="60">
 </textarea>
-</div>
-   <div>
-   <button id="decodeTextBtn">Decodificar</button>
+ </div>
 
-   </div>
-
+<button id="btnCopiar2">Copiar</button> <button id="btnlimpiar2">Limpiar</button> <button id="btnVolver2">Volver</button>
 
 </div>
 

@@ -2,10 +2,10 @@
 window.cipher = {
   encode: (texto, offset) => {
     let textoFinalCode= '';
-  
+
     for(let i = 0; i < texto.length; i++){
     let  asci_inicial = texto.charCodeAt(i);//texto ingresado por usuario, se convierte en un número ASCII
-    if(asci_inicial>=65 && asci_inicial<=90){
+    if(asci_inicial>=65 && asci_inicial<=90){ //condicional para que si la letra esta entre 65 y 90, es decir, entre la A y la Z, se aplique la fórmula
     let  asci_final = ((asci_inicial-65 + offset)%26 + 65);//número ASCii es desplazado
     let  letrafinal = String.fromCharCode(asci_final);//el número desplazado se convierte en nueva letra.
       textoFinalCode += letrafinal; //concatenación de letras
